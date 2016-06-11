@@ -1,10 +1,10 @@
 /* This sketch allows users to control two leds such that they blink in an alternate fashion. */
 int led1=8; //  initialize red led in digital pin 8
-int led2=2; //  initialize green led in digital pin 2
+int led2=3; //  initialize green led in digital pin 3
 
 void setup() {
   pinMode(led1,OUTPUT); // initialize digital pin 8 as output
-  pinMode(led2,OUTPUT); //  initialize digital pin 2 as output  
+  pinMode(led2,OUTPUT); //  initialize digital pin 3 as output  
 }
 
 void loop() {
@@ -20,3 +20,4 @@ void loop() {
 
 
 //lostboy
+//Comment: pin number was changed from 2 to 3 in order to follow the schematic diagram.
