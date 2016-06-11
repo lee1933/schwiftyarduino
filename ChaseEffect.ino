@@ -31,7 +31,7 @@ void changeLED(){
     digitalWrite(ledPin[currentLED],HIGH);
     currentLED+=direction;
     if (currentLED==8) {direction= -1;} // after the last LED, it will go backward
-    if (currentLED==0) {direction=2;}   // after the first LED, it will go forward
+    if (currentLED==0) {direction=1;}   // after the first LED, it will go forward
 
 }
 
