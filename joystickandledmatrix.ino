@@ -25,8 +25,8 @@ void loop() {
   LR = analogRead(A0);  // read analog value at pin A0 and stores as LR
   int state=digitalRead(button); //determines the state of button (HIGH or LOW)
   // scales down the value from 0-1023 to 0-7
-  char x_translate = map(LR, 1021, 0, 0, 7); 
-  char y_translate = map(UD, 1021, 0, 7, 0);
+  char x_translate = map(LR, 0,1023, 0, 7); 
+  char y_translate = map(UD, 0,1023, 7, 0);
 
   Serial.print ("Button=");
   Serial.print(state, DEC);
